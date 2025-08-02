@@ -1,0 +1,20 @@
+{
+    "name": "Hello Extensions",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "images/hello_extensions.png"
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "128": "images/icon-128.png"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "permissions": ["activeTab", "webRequest"],
+    "host_permissions": [
+    "*://*.google.com/*"
+    ]
+}
